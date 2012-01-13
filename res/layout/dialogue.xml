@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="24sp"
+		android:id="@+id/Question" />
+	<ListView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/List"
+		android:choiceMode="singleChoice" />
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="wrap_content" android:layout_height="fill_parent">
+		<Button android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/MenuButton"
+			android:layout_gravity="left"/>
+		<Button android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/NextButton"
+			android:layout_gravity="right" />
+	</LinearLayout>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/Response" />
+
+</LinearLayout>
