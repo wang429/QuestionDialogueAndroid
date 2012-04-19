@@ -3,10 +3,7 @@ package jcw.question.dialogue;
 /**
  * Question Dialogue App for Android [James Wang Prototype]
  * 
- * answer choices don't change, answer choices need to be reset somehow.
- * hard coded 2D string array can be modified.
- * 
- * needs to read from file.
+ * Order of questions should be random.
  */
 
 import jcw.question.database.Constants;
@@ -40,7 +37,7 @@ public class QuestionDialogue extends Activity {
 	private Button nextButton, menuButton; // nextButton doubles as checkButton
 	QDListAdapter adapter;
 	// Database variables
-	QuestionListCreator dlc;
+	QuestionListCreator qlc;
 	Database db;
 
 	// don't like following two lines
@@ -66,10 +63,10 @@ public class QuestionDialogue extends Activity {
 		setContentView(R.layout.dialogue);
 		db = new Database(this);
 		db.open();
-		dlc = new QuestionListCreator();
+		qlc = new QuestionListCreator();
 
 		// setting data for the first ql
-		ql = dlc.getData();
+		ql = qlc.getData();
 
 		// Finding id's of question, choices and next button
 		questionDisplay = (TextView) findViewById(R.id.Question);
