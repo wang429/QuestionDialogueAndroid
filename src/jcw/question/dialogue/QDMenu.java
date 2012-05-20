@@ -30,7 +30,7 @@ public class QDMenu extends Activity {
 		testButton = (Button) findViewById(R.id.TestButton);
 		insertButton = (Button) findViewById(R.id.InsertButton);
 
-		title.setText("Welcome to Android Trivia!/n - by James Wang");
+		title.setText("Welcome to Android Trivia!\n - by James Wang");
 		practiceButton.setText("Practice Mode");
 		testButton.setText("Test Mode");
 		insertButton.setText("--Add new questions--");
