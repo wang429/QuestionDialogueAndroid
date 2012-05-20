@@ -89,8 +89,8 @@ public class QuestionDialogue extends Activity {
 		correctChoice = new boolean[questionOrder.length];
 
 		// sets text to tutorial
-		String tutorialQuestion = "0. Hit \"Answer\" to continue";
-		String[] tutorialAnswers = { "Answer", "Distractor 1", "Distractor 2" };
+		String tutorialQuestion = "Are you ready?";
+		String[] tutorialAnswers = { "Yes", "", "" };
 		isTutorial = true;
 		if (isTutorial) {
 			questionDisplay.setText(tutorialQuestion);
@@ -159,7 +159,7 @@ public class QuestionDialogue extends Activity {
 			showToastText("Sorry. Please try again.");
 			nextButton.setEnabled(false);
 		} else {
-			if (currentQuestion >= questionOrder.length) {
+			if (currentQuestion + 1 >= questionOrder.length) {
 				atLastQuestion();
 
 			} else {

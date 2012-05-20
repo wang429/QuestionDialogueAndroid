@@ -57,7 +57,7 @@ public class InsertRecord extends Activity {
 				questionET.getText().toString(), answerET.getText().toString(),
 				distractor1ET.getText().toString(),
 				distractor2ET.getText().toString() };
-		if(str[0] == null || str[0].length() == 0){
+		if(str[0] == null || !str[0].equals("1")){
 			str[0] = "1";
 		}
 		for (int i = 0; i < str.length; i++) {

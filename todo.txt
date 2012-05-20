@@ -1,7 +1,10 @@
-SVN up and running?
-Get Insert Button working
+Welcome text on menu
+update questions
+move insert lower
+rename insert to "add new question"
+include remove question feature
 IQ test questions
-Test mode: next button change text to finish automatically.
+
 Display a radioButton on left side
 Have practice and test mode
 	practice: tell user if correct instantly (more or less current implementation) - Done
