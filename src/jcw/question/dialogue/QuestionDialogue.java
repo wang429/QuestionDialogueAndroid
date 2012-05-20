@@ -156,7 +156,7 @@ public class QuestionDialogue extends Activity {
 			showToastText("Sorry. Please try again.");
 			nextButton.setEnabled(false);
 		} else {
-			if (currentQuestion >= questionOrder.length) {
+			if (currentQuestion + 1 >= questionOrder.length) {
 				atLastQuestion();
 
 			} else {
